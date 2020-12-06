@@ -1,0 +1,88 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Plain's home in cyberspace</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/plain.css" />
+	<link href="/css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css"/>
+	<script src="/js/jquery-1.6.2.min.js"></script>
+	<script src="/js/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="http://static.wowhead.com/widgets/power.js"></script>
+	<style type="text/css">
+        .selected {
+            color: #F9F !important;
+        }
+        BODY{
+            font-size:12px;
+
+        }
+        li{
+            font-size:14px;
+        }
+	</style>
+
+	<script type="text/javascript">
+		var imgs=new Array(<!--#include virtual="/cgi-bin/imagelist.cgi"-->);
+		function changeBgImage(nr){
+			if(nr > imgs.length-1){
+				nr = 0;
+			}
+			//document.getElementById("body").style.backgroundImage = "url(" + imgs[nr] + ")";
+			//setTimeout('changeBgImage(' + (nr+1) + ')', 60000);
+		}
+	</script>
+	<script>
+		$(document).ready(function() {
+			$("#accordion").accordion({
+				collapsible: true,
+				autoHeight: false,
+				active: false
+			});
+			$("#accordion2").accordion({
+				collapsible: true,
+				autoHeight: false,
+				active: false
+			});
+		});
+	</script>
+</head>
+<body id="body"><!--  onload="changeBgImage(0);" -->
+<div id="main">
+
+
+	<h1>Plain rules!!</h1>
+	<ul>
+		<li>MS SKALL stå efter riktigt namn i guildnote</li>
+		<li>MSloot kommer ALLTID för OSloot</li>
+		<li>Mainloot kommer ALLTID före altloot</li>
+		<li>BoE skall gå till mains och eventuella alts som är med i gruppen, annars säljas</li>
+		<li><a href="/dkp.html">EPGP</a> är vårat system för att hålla koll på hur mycke folk är med och vad dom får för loot</li>
+		<li>Raidleaders kommer plocka ut den grupp som har chans att komma längst så även om 7 melee är signade först så kommer range ha ett antal spots</li>
+		<li>Fullgemmad, fullenchantad, flaska och mat</li>
+	</ul>
+	<ul>
+	</ul>
+	<p><br/></p>
+	<h2>Raids</h2>
+	<ul>
+		<li>Raids är onsdag och måndag mellan 20.00 och 23.00</li>
+		<li>Man ska vara inloggad minst 10 min innan.</li>
+		<li>Om du tror att du kommer sätt upp dig som accepted</li>
+		<li>Om du har annat så att du tror att du blir sen eller kanske inte kommer använd tentive, och tala gärna om för någon hur du tror att det blir</li>
+		<li>Om du vet att du inte kan komma (eller inte vill) använd denied</li>
+		<li>Om du är accepted och det dyker upp något så är det bra om man ändrar
+			sin status, det går att göra från webben eller telefon</li>
+		<li>Det kostar 250 GP att logga på senare än 10 minuter innan raidstart. 10 minuter efter raidstart och framåt kostar det 500 GP. </li>
+		<li>Förbered dig:
+			<ul>
+				<li>Flaska + mat skall vara med</li>
+				<li>Gear skall vara enchantat och gemat</li>
+				<li>Läs på fighterna som gäller för kvällen</li>
+			</ul>
+		</li>
+		<li>Kom i tid och ha kul!</li>
+		<li>Vi har ett <a href="http://www.worldoflogs.com/guilds/154781/">konto på world of logs</a> där man kan analysera varför det inte gick bättre</li>
+	</ul>
+</div>
+</body>
+</html>
